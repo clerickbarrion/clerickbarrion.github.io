@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* formatted lists, background, text */
+body {
+	background: rgb(0,80,107);
+	color:white;
+}
+header {
+	width:100%;
+}
+header img {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+nav {
+	background:white;
+	margin-top: 0px;
+	padding-top: 0px;
+	min-height: 3em;
+	color:white;
+}
+nav li a {
+	text-decoration:none;
+	color: rgb(0,80,107);
+	font-size: 30px;
+}
+
+section p {
+	font-size: 20px;
+	margin: 2% 2% 2% 2%;
+}
+h1 {
+	font-size: 20px;
+	text-align:center;
+}
+/* overflow */
+aside {
+	background-color: lightblue;
+	height: 638.5px;
+	overflow:auto;
+}
+aside p, aside h1 {
+	color: rgb(0,80,107);
+}
+aside div#author p {
+	font-size: 15px;
+}
+footer {
+   background-color: white;
+   font-size: 0.9em;
+   text-align: center;
+   padding: 10px 0px;
+   color: rgb(0,80,107);
+}
+
+section::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+nav {
+   min-height: 2em;
+}
+
+nav li {
+   color: rgb(31, 73, 125);
+   display: block;
+   line-height: 2em;
+   text-transform: uppercase;
+   float: left;
+}
+
+nav a {
+   display: block;
+   font-size: 1em;
+}
+/* pseudo-classes/ elements */
+nav a:visited, nav a:link {
+   color: rgb(31, 73, 125);
+}
+
+nav a:hover, nav a:active {
+   background-color: rgb(31, 73, 125);
+   color: white;
+}

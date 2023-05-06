@@ -1,0 +1,80 @@
+/* format form page */
+article {
+	width: 100%;
+	display:flex;
+	margin: 0px;
+}
+
+p#form {
+	font-weight: bold;
+	font-size: 30px;
+	background-color: white;
+	color: rgb(0,80,107);
+	width: 50%;
+	text-align: center;
+	height: 25%;
+}
+/* format countdown */
+div#countdown {
+	width:50%;
+	background-color:lightblue;
+	margin-right: 20px;
+	color: rgb(0,80,107);
+}
+div#timeLeft {
+	text-align: center;
+	font-size: 15px;
+}
+
+/* format the form */
+form {
+	display:flex;
+	flex-flow: row wrap;
+	width:100%;
+}
+form > fieldset {
+	border-radius: 20px;
+	flex: 1 1 300px;
+	font-size: 12px;
+	padding: 10px;
+	margin: 10px;
+}
+div.formRow {
+	display:flex;
+	flex-flow: row wrap;
+	margin: 7px 0px;
+}
+div.formRow > * {
+	flex: 1 1 150px;
+}
+/* Form Button */
+div#buttons {
+	text-align:center;
+	width:100%;
+}
+input [type='submit'], input[type='reset'] {
+	font-size:1.2em;
+	padding:5px;
+	margin:15px;
+}
+
+/* textarea */
+textarea {
+	margin-top: 10px;
+	height:100px;
+	width:95%;
+}
+/*legend*/
+legend {
+	font-size: 15px;
+	background-color: white;
+	color: rgb(0,80,107);
+	font-weight: bold;
+}
+/* format valid and invalid selected boxes */
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(220, 255, 220);
+}
+input#phone:focus:invalid, input#mail:focus:invalid {
+	background-color: rgb(255, 232, 233);
+}
