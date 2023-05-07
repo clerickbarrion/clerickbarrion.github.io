@@ -32,5 +32,5 @@ function countdown() {
 
 /* sends alert when sumbit button is pressed */
 function windowalert() {
-	alert('Submitted if all fields were inputted correctly');
+	alert('Form resets if all input is valid');
 }
