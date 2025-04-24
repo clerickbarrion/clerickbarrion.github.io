@@ -19,6 +19,12 @@ body {
    width: 100%;
 }
 	
+
+section li a {
+	color: orange;
+	font-size: 1.2em;
+}
+
 nav {
 	display:flex;
 	width:100%;
